@@ -147,10 +147,8 @@ li {
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-.Text-container {
-    padding-left: 50px;
+.Text-container p{
+    width: 500px;
 }
