@@ -40,3 +40,65 @@ console.log(details);
 
 // Assignment
 // declare a variable using let and fill in the information of anybody's name, age class hobbie color birthdate then log the final details in an object as seen above. to this for two persoms.
+
+let candidateName, candidateAge, candidateClass, candidateNumber, candidateID
+
+candidateName = "John Doe"
+candidateClass = "Year One"
+candidateID = 1
+candidateNumber = "08061674119"
+candidateAge = 13
+
+
+if(candidateAge > 12 ){
+    candidateAge = 14
+}
+ if(candidateName.includes("John Doe")){
+    candidateName = "Dwayne Johnson"
+}
+
+const CandidateDetails = {
+    name : candidateName,
+    age : candidateAge,
+    class : candidateClass,
+    Id : candidateID,
+    number : candidateNumber
+}
+
+console.log(CandidateDetails)
+
+// 2nd topic Data types || Primitive data types
+// we have 5 data types
+
+// String
+const VaniaColor = "Vania is light skin and tall in height"
+
+// Numbers
+const VaniasAge = 20
+
+// Boolean
+const Logic = false || true
+
+// Null
+// which means absent
+const presence = null
+
+// undefined
+// not defined yet
+const definition = undefined
+
+let password = "Vaniaimisi"
+let confirmPassword = "VaniaJohnboski"
+
+if(password === confirmPassword){
+    console.log("Create Successfully")
+}else if (password !== confirmPassword){
+    console.log("Incorrect password")
+}
+
+// Reference types
+const color = VaniaColor
+console.log(color);
+
+const regisDetails = CandidateDetails
+console.log(regisDetails);
