@@ -102,3 +102,99 @@ console.log(color);
 
 const regisDetails = CandidateDetails
 console.log(regisDetails);
+
+// Topic :  Type conversion
+// type conversion is the process of converting a value from one value to another
+
+// Converting string to number
+let amount = "1000"
+amount = parseInt(amount)
+amount = +amount
+amount = Number(amount)
+
+console.log(amount, typeof(amount))
+
+// Converting number to string
+let count = 200
+count = count.toString()
+count = String(count)
+
+console.log(count, typeof(count))
+
+// Converting strings to decimals
+let decimal = "99.5"
+decimal = parseFloat(decimal)
+
+console.log(decimal, typeof(decimal))
+
+// Converting number to boolean
+let check = 0
+check = Boolean(check)
+
+console.log(check);
+
+// TASK - convert string 22 to number, convert number 32 to string, convert boolean false and true to  number.
+
+// Topic : Operators
+// Arithemetic Operators
+let x;
+x = 5 + 5
+x = 10 - 5
+x = 5 * 5
+x = 7 % 5
+
+// Increment
+x = 1
+x = x + 5
+x++
+
+// Decrement
+x = 2
+x = x - 5
+x--
+console.log(x);
+
+
+// Comparison
+let compare = 2 == 3
+compare = 2 != 3
+compare = 5 < 10
+console.log(compare);
+
+// Concatination
+// means to join
+
+console.log('Hello' + 'Vania')
+
+// Task - use the arithemetic operators to do basic mathematical operation
+
+// Topic: Type Coercion
+// Coercion happens when you apply a value to operators
+let coercion = 5 + "5"
+coercion = 5 + Number("5")
+console.log(coercion)
+
+// Topic: Working with strings
+// using concatination
+const myName = "Benjamin"
+const myBestFood = "Rice and Stew"
+const favouriteColor = "Blue"
+
+let fullSentence = "my name is " + myName + " my favourite is food " + myBestFood + " i love the color" + favouriteColor
+
+console.log(fullSentence);
+
+// using tempelate literals
+const anotherSentence = `my name is ${myName} my favourite color is ${favouriteColor} and my best food is ${myBestFood}`
+console.log(anotherSentence);
+
+
+// Task use the concatination way to to add a string of I am going to school with the data of school been initialiazed as a variable
+
+
+// Task 2 us template literals to add a string of my name is name and i am going home. make sure to initialiase name and home using a variable.
+
+
+// Topic String Properties and Methods
+// Methods are function
+// Properties are attributes
