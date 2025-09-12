@@ -198,3 +198,19 @@ console.log(anotherSentence);
 // Topic String Properties and Methods
 // Methods are function
 // Properties are attributes
+
+const word = new String('Hello World')
+x = word.length
+x = word.toUpperCase()
+x = word.toLowerCase()
+x = word.indexOf('W')
+x = word.substring(0, 5)
+x = word.replace('Hello', 'Welcome')
+x = word.replaceAll('Hello World', 'Welcome Vania')
+x = word.includes('Vania') // returns true or false
+x = word.valueOf()
+x = word.split()
+x = word.charAt(0) // gives the first data on the code
+console.log(x)
+
+// Change the first letter of this (developer) t0 uppercase
