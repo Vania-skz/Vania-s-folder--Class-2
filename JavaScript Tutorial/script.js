@@ -87,15 +87,6 @@ const presence = null
 // not defined yet
 const definition = undefined
 
-let password = "Vaniaimisi"
-let confirmPassword = "VaniaJohnboski"
-
-if(password === confirmPassword){
-    console.log("Create Successfully")
-}else if (password !== confirmPassword){
-    console.log("Incorrect password")
-}
-
 // Reference types
 const color = VaniaColor
 console.log(color);
@@ -107,92 +98,112 @@ console.log(regisDetails);
 // type conversion is the process of converting a value from one value to another
 
 // Converting string to number
-let amount = "1000"
-amount = parseInt(amount)
-amount = +amount
-amount = Number(amount)
+const number = "2000"
+let conversion = parseInt(number)
+console.log(conversion, typeof(conversion));
 
-console.log(amount, typeof(amount))
+const number2 = "10000"
+let conversion2 = Number(number2)
+console.log(conversion2, typeof(conversion2));
+
 
 // Converting number to string
-let count = 200
-count = count.toString()
-count = String(count)
+let count = 300
+const string = count.toString()
+console.log(string, typeof(string));
 
-console.log(count, typeof(count))
+let count2 = 1000
+const string2 = String(count2)
+console.log(string2, typeof(string2));
+
 
 // Converting strings to decimals
-let decimal = "99.5"
-decimal = parseFloat(decimal)
+let decNo = "12.5"
+const convertDecNO = parseFloat(decNo)
+console.log(convertDecNO, typeof(convertDecNO));
 
-console.log(decimal, typeof(decimal))
 
 // Converting number to boolean
-let check = 0
-check = Boolean(check)
+let boo = 1
+boo = Boolean(boo)
+console.log(boo, typeof(boo));
 
-console.log(check);
+let num = false
+const checkTrue = Number(num)
+console.log(checkTrue, typeof(checkTrue));
 
-// TASK - convert string 22 to number, convert number 32 to string, convert boolean false and true to  number.
+
+
+// // TASK - convert string 22 to number, convert number 32 to string, convert boolean false and true to  number.
 
 // Topic : Operators
 // Arithemetic Operators
 let x;
-x = 5 + 5
-x = 10 - 5
-x = 5 * 5
-x = 7 % 5
+x = 5 + 2
+x = 4 - 2
+x = 4 * 4
+x = 10 / 5
 
-// Increment
+
+
+// // Increment
 x = 1
 x = x + 5
 x++
 
-// Decrement
+
+
+// // Decrement
 x = 2
 x = x - 5
-x--
 console.log(x);
 
 
-// Comparison
+// // Comparison
 let compare = 2 == 3
-compare = 2 != 3
-compare = 5 < 10
+compare = 2 < 3
+compare = 2 == 2
+compare = 3 !== 3
+
 console.log(compare);
 
-// Concatination
-// means to join
+// // Concatination
+// // means to join
 
-console.log('Hello' + 'Vania')
+const concat = "My name is Vania "
+const cat = " and my brother's name is Vannel "
 
-// Task - use the arithemetic operators to do basic mathematical operation
+const join = concat + cat
+console.log(join, typeof(join));
 
-// Topic: Type Coercion
-// Coercion happens when you apply a value to operators
+// // Task - use the arithemetic operators to do basic mathematical operation
+
+// // Topic: Type Coercion
+// // Coercion happens when you apply a value to operators
 let coercion = 5 + "5"
-coercion = 5 + Number("5")
-console.log(coercion)
+coercion = 5 + parseInt("5")
+console.log(coercion);
 
-// Topic: Working with strings
+
+// // Topic: Working with strings
 // using concatination
 const myName = "Benjamin"
 const myBestFood = "Rice and Stew"
 const favouriteColor = "Blue"
 
-let fullSentence = "my name is " + myName + " my favourite is food " + myBestFood + " i love the color" + favouriteColor
+let fullSentence = "My name is " + myName + " my favourite food is " + myBestFood + " and i love color " + favouriteColor
 
 console.log(fullSentence);
 
-// using tempelate literals
-const anotherSentence = `my name is ${myName} my favourite color is ${favouriteColor} and my best food is ${myBestFood}`
+// // using tempelate literals
+const anotherSentence = ``
 console.log(anotherSentence);
 
 
 // Task use the concatination way to to add a string of I am going to school with the data of school been initialiazed as a variable
 
 
-// Task 2 us template literals to add a string of my name is name and i am going home. make sure to initialiase name and home using a variable.
+// // Task 2 us template literals to add a string of my name is name and i am going home. make sure to initialiase name and home using a variable.
 
 
 // Topic String Properties and Methods
@@ -204,13 +215,61 @@ x = word.length
 x = word.toUpperCase()
 x = word.toLowerCase()
 x = word.indexOf('W')
-x = word.substring(0, 5)
+x = word.substring(1, 4)
 x = word.replace('Hello', 'Welcome')
 x = word.replaceAll('Hello World', 'Welcome Vania')
-x = word.includes('Vania') // returns true or false
+x = word.includes('Hello') // returns true or false
 x = word.valueOf()
 x = word.split()
 x = word.charAt(0) // gives the first data on the code
-console.log(x)
 
-// Change the first letter of this (developer) t0 uppercase
+
+// // Change the first letter of this (developer) t0 uppercase
+
+// Chain Method 
+const newSentence = "Welcome Vania"
+x = newSentence.replace('Vania', 'Vannel').includes('Vannel')
+
+
+// Numbers Properties and their function
+const newNumber = new Number(5678911)
+x = newNumber.toString()
+x = newNumber.toString().length
+x = newNumber.toFixed(4)
+x = newNumber.toLocaleString('en-ng')
+
+
+// Math Object 
+x = Math.sqrt(9)
+x = Math.abs(-5)
+x = Math.round(4.2)
+x = Math.ceil(4.35)
+x = Math.floor(4.9)
+x = Math.pow(2, 5)
+x = Math.min(4,5,6,7)
+x = Math.max(4,5,6,7,8,9)
+x = Math.random() * 100
+
+// Time Stamps (Date and Time)
+let d = new Date()
+x = d.toString()
+x = d.getDate()
+x = d.getFullYear()
+x = d.getHours()
+x = d.getMinutes()
+console.log(x, typeof(x));
+
+// Array and Object
+// Array are special type of object and a data structure in javascript that holds and stores multiple data
+
+let items = ['beans', 'rice', 'maize']
+items = new Array('cassava', 'yam', 'stick')
+
+// how to change value in an array
+items[2] = 'Carrot'
+items.length = 2
+items[items.length] = 'Potatoes'
+
+
+console.log(items)
+
