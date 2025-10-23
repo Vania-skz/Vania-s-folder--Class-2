@@ -267,9 +267,36 @@ items = new Array('cassava', 'yam', 'stick')
 
 // how to change value in an array
 items[2] = 'Carrot'
-items.length = 2
+// 2nd way
+items.length = 1
 items[items.length] = 'Potatoes'
-
-
 console.log(items)
 
+// Array Methods
+const arrItems = ['Pen', 'Paper', 'Book', 'Mouse',]
+arrItems.push('Laptop') //adds a value at the end of the array
+arrItems.unshift('Chain') //adds a value to the beginning of the array.
+arrItems.pop() // takes away the last value in the array.
+arrItems.shift() //takes the first value on the array
+// arrItems.reverse() //returns from last to first
+x = arrItems.includes('Paper')
+x = arrItems.indexOf('Paper')
+x = arrItems.slice(0, 1) //display the items found within the number.
+x = arrItems.splice(0, 3)
+
+
+// Array Nesting, Concat, Spread
+// Array Nesting
+const fruits = ['mango', 'banana', 'apple']
+const berries = ['strawberry', 'blueberry', 'blackberry']
+
+// fruits.push(berries)
+// x = fruits[3][0]
+
+
+// concat method
+const phone = ['Iphone', 'Samsung', 'Tecno']
+const cars = ['Honda', 'Toyota', 'Benz']
+x = phone.concat(cars)
+x = fruits.concat(berries)
+console.log(x)
