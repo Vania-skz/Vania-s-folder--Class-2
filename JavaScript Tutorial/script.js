@@ -300,3 +300,71 @@ const cars = ['Honda', 'Toyota', 'Benz']
 x = phone.concat(cars)
 x = fruits.concat(berries)
 console.log(x)
+
+// DOM
+// DOCUMENT OBJECT MODEL
+// Calculator code
+// get input
+const firstInput = document.getElementById('first-number')
+const secondInput = document.getElementById('second-number')
+const answer = document.getElementById('answer')
+
+// get Arithemtic operators
+const add = document.getElementById('add')
+const subtract = document.getElementById('subtract')
+const divide = document.getElementById('divide')
+const multiply = document.getElementById('subtract')
+
+// event Listener
+// for addition
+add.addEventListener('click', handleAdd)
+subtract.addEventListener('click', handleSubtract)
+divide.addEventListener('click', handledivison)
+
+// handle addition
+function handleAdd(){
+    const firstnumber = firstInput.value
+    const secondnumber = secondInput.value
+
+    const convertFirstnumber = parseInt(firstnumber)
+    const convertSecondnumber = parseInt(secondnumber)
+
+    if(!firstnumber && !secondnumber){
+        alert('there is no value')
+    }else if(firstnumber && secondnumber){
+        const finalAnswer = convertFirstnumber + convertSecondnumber
+        answer.textContent = finalAnswer
+    }
+};
+
+// handle Subtract
+function handleSubtract(){
+    const firstnumber = firstInput.value
+    const secondnumber = secondInput.value
+
+    const convertFirstnumber = parseInt(firstnumber)
+    const convertSecondnumber = parseInt(secondnumber)
+
+    if(!firstnumber && !secondnumber){
+        alert('there is no value')
+    }else if(firstnumber && secondnumber){
+        const finalAnswer = convertFirstnumber - convertSecondnumber
+        answer.textContent = finalAnswer
+    }
+}
+
+
+function handledivison(){
+    const firstnumber = firstInput.value
+    const secondnumber = secondInput.value
+
+    const convertFirstnumber = parseInt(firstnumber)
+    const convertSecondnumber = parseInt(secondnumber)
+
+    if(!firstnumber && !secondnumber){
+        alert('there is no value')
+    }else if(firstnumber && secondnumber){
+        const finalAnswer = convertFirstnumber / convertSecondnumber
+        answer.textContent = finalAnswer
+    }
+}

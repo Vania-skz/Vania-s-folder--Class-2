@@ -1,0 +1,28 @@
+.cac-container{
+    width: 600px;
+    margin: 20px auto;
+    background-color: brown;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    justify-self: center;
+}
+
+button{
+    display: block;
+    justify-self: center;
+    margin: 6px 0px;
+    padding: 5px 6px;
+}
+
+p{
+    justify-self: center;
+    font-size: large;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+}
